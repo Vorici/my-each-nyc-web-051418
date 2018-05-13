@@ -1,5 +1,16 @@
-def my_each(array)
-  while i < array.length 
-  puts i
+collection = [1, 2, 3, 4]
+
+def my_each(collection)
+  i = 0
   
+ while i < collection.length
+ block_given?
+  yield(collection[i])
+ i += 1
+ end
+ collection
+end
+
+my_each(collection) do |i|
+  puts i
 end
