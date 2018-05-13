@@ -11,6 +11,3 @@ def my_each(collection)
  collection
 end
 
-my_each(collection) do |i|
-   i
-end
